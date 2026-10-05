@@ -2,7 +2,9 @@
 
 ## Overview
 
-A machine learning project that predicts the median house value of a California district using the California Housing Prices dataset.
+A Machine Learning project that predicts the median house value of a California district using the California Housing Prices dataset.
+
+Dataset Link: https://www.kaggle.com/datasets/shravanbangera/californiahousing1990
 
 ## Features
 
@@ -23,19 +25,19 @@ Additional features:
 
 ## Model
 
-The project uses Linear Regression with:
+The project uses Linear Regression with the following preprocessing techniques:
 
-- Median imputation
-- StandardScaler
-- One-Hot Encoding
-- Train-test split (80/20)
+1. Missing numerical values are handled using median imputation.
+2. Numerical features are standardized using `StandardScaler`.
+3. The categorical `ocean_proximity` feature is converted into numerical values using `OneHotEncoder`.
+4. All preprocessing steps and the machine learning model are combined using a Scikit-learn pipeline.
 
 The model is evaluated using:
 
-- R² Score
-- MAE
-- RMSE
-- MAPE
+- **R² Score**
+- **Mean Absolute Error (MAE)**
+- **Root Mean Squared Error (RMSE)**
+- **Mean Absolute Percentage Error (MAPE)**
 
 ## Project Structure
 
@@ -51,6 +53,15 @@ house-price-predictor/
 ├── README.md
 └── requirements.txt
 ```
+## Data Visualization
+One useful visualization of the project is the Actual vs Predicted House Values graph plotted using Matplotlib
+The graph compares:
+```text
+Actual house values
+        vs
+Predicted house values
+```
+Points closer to the diagonal reference line indicate predictions that are closer to the actual values.
 
 ## How to Run
 
