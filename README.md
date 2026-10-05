@@ -39,6 +39,7 @@ The model is evaluated using:
 
 ## Project Structure
 
+```text
 house-price-predictor/
 ├── data/
 │   └── dataset.csv
@@ -49,6 +50,7 @@ house-price-predictor/
 ├── app.py
 ├── README.md
 └── requirements.txt
+```
 
 ## How to Run
 
