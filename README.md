@@ -55,13 +55,19 @@ house-price-predictor/
 ## How to Run
 
 ### Install dependencies:
+```text
 pip install -r requirements.txt
+```
 
 ### Train the model:
+```text
 python src/train.py
+```
 
 ### Run the prediction application:
+```text
 python app.py
+```
 
 ## Technologies Used
 Python, Pandas, NumPy, Scikit-learn, Joblib, Matplotlib, VS Code
